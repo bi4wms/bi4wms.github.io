@@ -1,78 +1,35 @@
-# Justice
+# Business Jekyll Theme
 
-Law firm themed business template for Jekyll. Browse through a [live demo](https://grey-grouse.cloudvent.net/).
-Increase the web presence of a law firm or business with this configurable theme.
+Business Jekyll Theme is a theme that is designed to be used for small and medium business. It is designed by a team from [Technext](https://github.com/technext/). The theme is then ported over by [Melvin Ch'ng](http://melvinchng.github.io) for Jekyll support. The original source code can be obainted from Technext's [repository](https://github.com/technext/office)
 
-![Justice template screenshot](images/_screenshot.png)
+Unlike most Jekyll Themes, Business Jekyll Theme is not meant to be a single page theme. This theme is a package that you can use for your business website or promote certain project. I reorganized all the files and make it Jekyll friendly.
 
-Justice was made by [CloudCannon](https://cloudcannon.com/), the Cloud CMS for Jekyll.
+Big thanks to the creator of Office as this theme would not be possible without their hard work! You are always welcome to contribute to this repository to make it better!
 
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
+**Example Site**
+- [Business Jekyll Theme](https://business-jekyll-theme.github.io)
 
-## Features
+**Example Site From The Original Creator**
+- [Office Template](http://demo.themewagon.com/preview/office-responsive-multipage-bootstrap-template)
 
-* Contact form
-* Pre-built pages
-* Pre-styled components
-* Blog with pagination
-* Post category pages
-* Disqus comments for posts
-* Staff and author system
-* Configurable footer
-* Optimised for editing in [CloudCannon](https://cloudcannon.com/)
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
+## Feature
+- Responsive layout
+- CSS Framework - Bootstrap 3
+- Beautiful icons by Fontawesome
+- Clean, simple and elegant
+- Multi page Template
+- Well commented and structured coding
+- Easy to use
+- It's Free!
 
-## Setup
+## Note
+I removed certain features from the original theme packages as we do not really need it. I modified the original source code slightly to make it more mobile friendly and reusable. 
 
-1. Add your site and author details in `_config.yml`.
-2. Add your Google Analytics and Disqus keys to `_config.yml`.
-3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+## Installation
+1. For first time user, you have to install Ruby and Rails. If you do not have Ruby on Rails installed, you may follow [this tutorial](http://melvinchng.github.io/rails/RubyOnRailsInstallation.html) that I wrote for Windows, Linux, and MacOS (installation videos are included).
+2. Install Jekyll by using the command `gem install jekyll`.
+3. Start your localhost server by using the command `jekyll serve`. Make sure that you are at the root directory of your folder before using this command.
+4. Your site should be accessible at `localhost:4000`.
+5. For additional information about Jekyll, refer to the [official website](http://jekyllrb.com/). 
 
-## Develop
-
-Justice was built with [Jekyll](https://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
-
-Install the dependencies with [Bundler](https://bundler.io/):
-
-~~~bash
-$ bundle install
-~~~
-
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
-
-~~~bash
-$ bundle exec jekyll serve
-~~~
-
-## Editing
-
-Justice is already optimised for adding, updating and removing pages, staff, advice, company details and footer elements in [CloudCannon](https://app.cloudcannon.com/).
-
-### Posts
-
-* Add, update or remove a post in the *Posts* collection.
-* The **Staff Author** field links to members in the **Staff** collection.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
-* Change the defaults when new posts are created in `_posts/_defaults.md`.
-
-### Contact Form
-
-* Preconfigured to work with [CloudCannon](https://app.cloudcannon.com/), but easily changed to another provider (e.g. [FormSpree](https://formspree.io/)).
-* Sends email to the address listed in company details.
-
-### Staff
-
-* Reused around the site to save multiple editing locations.
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
-
-### Footer
-
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Footer* section.
-
-### Company details
-
-* Reused around the site to save multiple editing locations.
-* Set in the *Data* / *Company* section.
+## Enjoy!
