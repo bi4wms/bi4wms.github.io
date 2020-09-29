@@ -1,7 +1,7 @@
 # ----
 # Site
-
-title: Justice Template
+#title: Justice Template
+title: bi4wms
 url: "https://orchid-heron.cloudvent.net"
 baseurl: 
 google_analytics_key:
@@ -10,15 +10,17 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Jekyll template with example content for a law firm.
+#description: Jekyll template with example content for a law firm.
+description: The best desingers.
 author:
   name:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Justice Template
+  #name: Justice Template
+  name: #Justice Template
   links:
-    - https://github.com/CloudCannon/justice-jekyll-template
+    #- https://github.com/CloudCannon/justice-jekyll-template
 
 # -----
 # Build

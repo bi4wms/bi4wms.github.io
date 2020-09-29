@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: 联系我们 <!---Contact--->
 call_to_action: Map
 background_image_path:
 large_header: false
@@ -12,22 +12,26 @@ map:
 ---
 
 <p class="editable">
+  欢迎随时联系,给我们一个机会。我们会一如既往的提供热忱服务。
+  <!---
 	Come see us in person, give us a call, or send us a message with your details and we'll be in contact shortly after. No obligations and your first meeting is free.
+	--->
 </p>
 
 <div class="columns">
 	<div class="column">
 		<p class="editor-link"><a href="cloudcannon:collections/_data/company.yml" class="btn"><strong>&#9998;</strong> Update Company Details</a></p>
 
-		<label>Phone Number</label>
+		<label>电话<!---Phone Number---></label>
 		<p class="contact-info"><a href="tel:{{ site.data.company.contact_phone_number }}">{{ site.data.company.contact_phone_number }}</a></p>
 
-		<label>Email Address</label>
+		<label>信箱<!---Email Address---></label>
 		<p class="contact-info"><a href="mailto:{{ site.data.company.contact_email_address }}">{{ site.data.company.contact_email_address }}</a></p>
-
+<!---
 		<label>Postal Address</label>
 		<address class="contact-info">{{ site.data.company.postal_address | replace: ',', '<br>' }}</address>
-		<label>Address</label>
+		--->
+		<label>地址<!---Address---></label>
 		<address class="contact-info">{{ site.data.company.address | replace: ',', '<br>' }}</address>
 	</div>
 
