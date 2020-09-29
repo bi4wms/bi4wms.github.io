@@ -6,10 +6,17 @@
 #postal_address: PO Box 123, Ducktown, New Zealand
 #bi4wms
 title: bi4wms
+<<<<<<< HEAD
 description:   我们有超过15年的电子产品设计经验。我们始终把客户的需求做为我们追求。
 #We have design electronic products for over 16 years. bi4wms strives to excel for all clients in every situation.
 contact_email_address: bi4wms@qq.com
 contact_phone_number: (86) 135 8403 7031
 address: 中国南京江北新区
 #Jiangbei new area, Nanjing
+=======
+description: Working with people for over 16 years. bi4wms strives to excel for all clients in every situation.
+contact_email_address: bi4wms@qq.com
+#contact_phone_number: (03) 123 4567
+address: Jiangbei new district, Nanjing
+>>>>>>> 730b477f1e1881fe645ad3f749d6a17b08e80c11
 #postal_address: PO Box 123, Ducktown, New Zealand
