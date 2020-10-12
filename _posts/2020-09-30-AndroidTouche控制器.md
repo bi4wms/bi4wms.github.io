@@ -9,9 +9,11 @@ image: /uploads/bi4wms-touche-reva-2.jpg
 large_header: false
 ---
 
-ArduinoTouche控制器，disneyTouche的Arduino版本。
+ArduinoTouche控制器。
 
 &nbsp;
+
+disneyTouche的Arduino版本，利用扫频电容原理，实现多种触摸方式的检测。
 
 #### PCBA
 
