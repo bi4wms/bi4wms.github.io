@@ -18,7 +18,7 @@ OpenPilot系列飞控、GPSV9、数传、树莓派飞控等等。
 
 #### 数传遥控二合一模块
 
-![](/uploads/bi4wmslink.png){: width="960" height="294"}
+![](/uploads/bi4wmslink.jpg){: width="960" height="294"}
 
 #### bi4wmsNano飞控
 
@@ -28,7 +28,7 @@ OpenPilot系列飞控、GPSV9、数传、树莓派飞控等等。
 
 #### 树莓派飞控
 
-![](/uploads/树莓派飞控.png){: width="960" height="294"}
+![](/uploads/树莓派飞控.jpg){: width="960" height="294"}
 
 #### 有刷飞控
 
