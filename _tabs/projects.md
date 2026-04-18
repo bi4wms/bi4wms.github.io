@@ -1,5 +1,5 @@
 ---
-title: projects
+title: Projects
 layout: page
 permalink: /projects/
 icon: fas fa-newspaper
