@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-order: 7
+order: 8
 icon: fas fa-user-shield
 permalink: /privacy-policy/
 ---
