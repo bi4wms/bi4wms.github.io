@@ -5,7 +5,7 @@ icon: fas fa-book-open
 permalink: /guides/
 order: 7
 ---
-{% assign posts = site.posts | where_exp: "post", "post.categories contains 'Guides'" | sort: 'date' | reverse %}<div class="post-list">
+{% assign posts = site.posts | where_exp: "post", "post.categories contains 'Tutorial'" | sort: 'date' | reverse %}<div class="post-list">
   {% for post in posts %}
     <article class="post-preview">
       <h2>
