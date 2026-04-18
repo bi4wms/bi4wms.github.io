@@ -7,25 +7,22 @@ order: 6
 ---
 
 <style>
-/* ==================== 与首页卡片完全一致的风格 ==================== */
-
-/* 标题 - 严格对齐首页卡片标题颜色（不再固定蓝色） */
+/* 与首页卡片完全一致的核心样式 */
 .card-title,
 .card-title a {
     font-size: 1.25rem !important;
     line-height: 1.35 !important;
     margin-top: 0.25rem !important;
     margin-bottom: 0.65rem !important;
-    color: var(--link-color) !important;
+    color: var(--link-color) !important;           /* 关键：跟随主题链接色 */
     text-decoration: none !important;
 }
 
 .card-title a:hover {
     color: var(--link-hover-color) !important;
-    text-decoration: underline !important;
 }
 
-/* 阅读全文链接 - 与首页一致 */
+/* 阅读全文 - 与首页一致 */
 .read-more {
     color: var(--link-color) !important;
     font-weight: 500;
@@ -34,45 +31,32 @@ order: 6
 
 .read-more:hover {
     color: var(--link-hover-color) !important;
-    text-decoration: underline !important;
 }
 
-/* 卡片整体（保持之前优化） */
-.post-list .card {
-    background-color: var(--card-bg) !important;
-    border: 1px solid var(--border-color) !important;
-    box-shadow: var(--card-shadow) !important;
-    margin-top: 0 !important;
-    transition: all 0.2s ease;
-}
-
-.post-list .card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
-}
-
-/* 缩略文和日期 */
-.card-text {
-    color: var(--text-color) !important;
-    font-size: 0.95rem !important;
-    margin-bottom: 0.85rem !important;
-}
-
+/* 日期 - 恢复跟随 Dark Mode */
 .post-meta,
 .post-meta time {
     color: var(--text-muted) !important;
     font-size: 0.9rem !important;
 }
 
-/* ==================== Dark Mode 强制兜底 ==================== */
-html[data-mode="dark"] .card-title a,
-html[data-mode="dark"] .read-more {
-    color: var(--link-color) !important;
+/* 卡片基础（保持稳定） */
+.post-list .card {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: var(--card-shadow) !important;
+    margin-top: 0 !important;
 }
 
-html[data-mode="dark"] .card-title a:hover,
-html[data-mode="dark"] .read-more:hover {
-    color: var(--link-hover-color) !important;
+.post-list {
+    gap: 1.55rem !important;
+}
+
+/* 缩略文 */
+.card-text {
+    color: var(--text-color) !important;
+    font-size: 0.95rem !important;
+    margin-bottom: 0.85rem !important;
 }
 </style>
 
