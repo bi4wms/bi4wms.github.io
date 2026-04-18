@@ -1,9 +1,9 @@
 ---
-title: Guides
+title: Tutorials
 layout: page
 icon: fas fa-book-open
-permalink: /guides/
-order: 7
+permalink: /tutorials/
+order: 2
 ---
 
 <style>
