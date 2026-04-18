@@ -8,7 +8,7 @@ order: 6
 
 {% assign blog_posts = site.posts | where_exp: "post", "post.categories contains 'Blog'" | sort: "date" | reverse %}
 
-<div class="post-list">
+<div class="post-list" style="display: flex; flex-direction: column; gap: 2rem;">
   {% for post in blog_posts %}
     <article class="card">
       <div class="card-body">
