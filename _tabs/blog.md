@@ -5,12 +5,13 @@ permalink: /blog/
 icon: fas fa-newspaper
 order: 6
 ---
+
 <style>
-/* 精确对齐 Chirpy 官方首页卡片风格 */
+/* 精确对齐 Chirpy 官方首页卡片风格 + 完美支持 Dark Mode */
 .card-title {
-    font-size: 1.25rem !important;     /* 首页卡片标题大小 */
+    font-size: 1.25rem !important;
     line-height: 1.35 !important;
-    margin-top: 0.25rem !important;    /* 大幅减少标题上方留白（原问题核心） */
+    margin-top: 0.25rem !important;    /* 解决标题上方留白过大 */
     margin-bottom: 0.65rem !important;
 }
 
@@ -18,24 +19,37 @@ order: 6
     padding: 1.35rem 1.4rem !important;
 }
 
-/* 卡片间距与首页保持一致 */
+/* 卡片间距与首页一致 */
 .post-list {
-    gap: 1.55rem !important;           /* 比原来 2rem 更紧凑 */
+    gap: 1.55rem !important;
 }
 
 .post-list .card {
     margin-top: 0 !important;
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: var(--card-shadow) !important;
     transition: all 0.2s ease;
 }
 
 .post-list .card:hover {
     transform: translateY(-3px);
-    box-shadow: var(--card-shadow, 0 8px 25px rgba(0,0,0,0.15)) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important; /* 浅色下明显，深色下柔和 */
 }
 
-/* 让文字颜色和首页一致 */
+/* 文字颜色跟随 Dark Mode */
 .card-text {
     color: var(--text-muted) !important;
+    margin-bottom: 0.8rem;
+}
+
+.post-meta {
+    color: var(--text-muted) !important;
+    font-size: 0.9rem;
+}
+
+.read-more {
+    color: var(--link-color) !important;
 }
 </style>
 
@@ -57,13 +71,6 @@ order: 6
 
         <div class="post-meta">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-          
-          {% if post.tags.size > 0 %}
-            • 
-            {% for tag in post.tags limit: 4 %}
-              <a href="{{ '/tags/' | append: tag | relative_url }}" class="tag">#{{ tag }}</a>
-            {% endfor %}
-          {% endif %}
         </div>
 
         <a href="{{ post.url | relative_url }}" class="read-more">阅读全文 →</a>
