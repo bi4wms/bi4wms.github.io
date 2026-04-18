@@ -1,7 +1,7 @@
 ---
 title: Tutorials
 layout: page
-icon: fas fa-book-open
+icon: fas fa-book
 permalink: /tutorials/
 order: 2
 ---
