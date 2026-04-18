@@ -8,7 +8,7 @@ order: 6
 
 {% assign blog_posts = site.posts | where_exp: "post", "post.categories contains 'Blog'" | sort: "date" | reverse %}
 
-<div id="post-list" class="post-list">
+<div class="post-list">
   {% for post in blog_posts %}
     <article class="card">
       <div class="card-body">
@@ -17,9 +17,9 @@ order: 6
         </h2>
 
         {% if post.description %}
-          <p class="card-text content">{{ post.description }}</p>
+          <p class="card-text">{{ post.description }}</p>
         {% elsif post.excerpt %}
-          <p class="card-text content">{{ post.excerpt | strip_html | truncate: 180 }}</p>
+          <p class="card-text">{{ post.excerpt | strip_html | truncate: 180 }}</p>
         {% endif %}
 
         <div class="post-meta">
@@ -33,7 +33,7 @@ order: 6
           {% endif %}
         </div>
 
-        <a href="{{ post.url | relative_url }}" class="btn btn-outline-primary read-more">阅读全文 →</a>
+        <a href="{{ post.url | relative_url }}" class="read-more">阅读全文 →</a>
       </div>
     </article>
   {% endfor %}
