@@ -2,7 +2,7 @@
 title: Blog
 layout: page
 permalink: /blog/
-fas: fa-newspaper
+icon: fas fa-newspaper
 order: 6
 ---
 
