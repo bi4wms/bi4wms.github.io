@@ -3,7 +3,7 @@ title: Projects
 layout: page
 permalink: /projects/
 icon: fas fa-microchip
-order: 1
+order: 2
 ---
 
 <style>
