@@ -3,10 +3,8 @@ title: Blog
 layout: page
 permalink: /blog/
 fas: fa-newspaper
-order: 2
+order: 6
 ---
-
-<h1 class="page-title">{{ page.title }}</h1>
 
 {% assign blog_posts = site.posts | where_exp: "post", "post.categories contains 'Blog'" | sort: "date" | reverse %}
 
