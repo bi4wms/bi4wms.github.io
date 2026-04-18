@@ -7,62 +7,40 @@ order: 6
 ---
 
 <style>
-/* 与首页卡片完全一致的核心样式 */
-.card-title,
+/* 最高优先级强制覆盖标题和阅读全文颜色（跟随主题） */
+.post-list .card-title a,
+.post-list .card .card-title a,
 .card-title a {
-    font-size: 1.25rem !important;
-    line-height: 1.35 !important;
-    margin-top: 0.25rem !important;
-    margin-bottom: 0.65rem !important;
-    color: var(--link-color) !important;           /* 关键：跟随主题链接色 */
+    color: var(--link-color) !important;
     text-decoration: none !important;
 }
 
+.post-list .card-title a:hover,
 .card-title a:hover {
     color: var(--link-hover-color) !important;
+    text-decoration: underline !important;
 }
 
-/* 阅读全文 - 与首页一致 */
+.post-list .read-more,
 .read-more {
     color: var(--link-color) !important;
-    font-weight: 500;
     text-decoration: none !important;
 }
 
+.post-list .read-more:hover,
 .read-more:hover {
     color: var(--link-hover-color) !important;
 }
 
-/* 日期 - 恢复跟随 Dark Mode */
-.post-meta,
+/* 日期跟随模式 */
 .post-meta time {
     color: var(--text-muted) !important;
-    font-size: 0.9rem !important;
-}
-
-/* 卡片基础（保持稳定） */
-.post-list .card {
-    background-color: var(--card-bg) !important;
-    border: 1px solid var(--border-color) !important;
-    box-shadow: var(--card-shadow) !important;
-    margin-top: 0 !important;
-}
-
-.post-list {
-    gap: 1.55rem !important;
-}
-
-/* 缩略文 */
-.card-text {
-    color: var(--text-color) !important;
-    font-size: 0.95rem !important;
-    margin-bottom: 0.85rem !important;
 }
 </style>
 
 {% assign blog_posts = site.posts | where_exp: "post", "post.categories contains 'Blog'" | sort: "date" | reverse %}
 
-<div class="post-list" style="display: flex; flex-direction: column; gap: 1.55rem;">
+<div class="post-list">
   {% for post in blog_posts %}
     <article class="card">
       <div class="card-body">
