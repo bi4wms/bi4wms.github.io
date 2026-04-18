@@ -7,9 +7,9 @@ order: 6
 ---
 
 <style>
-/* ==================== Chirpy 官方卡片风格对齐 + 强力 Dark Mode 支持 ==================== */
+/* ==================== 与首页卡片完全一致的风格 ==================== */
 
-/* 标题 - 强制跟随主题链接颜色 */
+/* 标题 - 严格对齐首页卡片标题颜色（不再固定蓝色） */
 .card-title,
 .card-title a {
     font-size: 1.25rem !important;
@@ -17,13 +17,27 @@ order: 6
     margin-top: 0.25rem !important;
     margin-bottom: 0.65rem !important;
     color: var(--link-color) !important;
+    text-decoration: none !important;
 }
 
 .card-title a:hover {
     color: var(--link-hover-color) !important;
+    text-decoration: underline !important;
 }
 
-/* 卡片基础样式 */
+/* 阅读全文链接 - 与首页一致 */
+.read-more {
+    color: var(--link-color) !important;
+    font-weight: 500;
+    text-decoration: none !important;
+}
+
+.read-more:hover {
+    color: var(--link-hover-color) !important;
+    text-decoration: underline !important;
+}
+
+/* 卡片整体（保持之前优化） */
 .post-list .card {
     background-color: var(--card-bg) !important;
     border: 1px solid var(--border-color) !important;
@@ -37,53 +51,28 @@ order: 6
     box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
 }
 
-/* 缩略文（excerpt） */
+/* 缩略文和日期 */
 .card-text {
     color: var(--text-color) !important;
     font-size: 0.95rem !important;
     margin-bottom: 0.85rem !important;
 }
 
-/* 日期 - 加强 Dark Mode */
 .post-meta,
 .post-meta time {
     color: var(--text-muted) !important;
     font-size: 0.9rem !important;
 }
 
-/* 阅读全文 */
-.read-more {
-    color: var(--link-color) !important;
-    font-weight: 500;
-}
-
-.read-more:hover {
-    color: var(--link-hover-color) !important;
-    text-decoration: underline;
-}
-
-/* ==================== Dark Mode 专属强制规则（解决没有变化的问题） ==================== */
-html[data-mode="dark"] .post-list .card,
+/* ==================== Dark Mode 强制兜底 ==================== */
 html[data-mode="dark"] .card-title a,
-html[data-mode="dark"] .card-text,
-html[data-mode="dark"] .post-meta,
 html[data-mode="dark"] .read-more {
-    color: inherit !important;   /* 强制继承主题变量 */
-}
-
-/* Dark Mode 下更清晰的文字颜色兜底 */
-html[data-mode="dark"] .card-text {
-    color: var(--text-color) !important;
-}
-
-html[data-mode="dark"] .post-meta,
-html[data-mode="dark"] .post-meta time {
-    color: var(--text-muted) !important;
-}
-
-html[data-mode="dark"] .read-more,
-html[data-mode="dark"] .card-title a {
     color: var(--link-color) !important;
+}
+
+html[data-mode="dark"] .card-title a:hover,
+html[data-mode="dark"] .read-more:hover {
+    color: var(--link-hover-color) !important;
 }
 </style>
 
