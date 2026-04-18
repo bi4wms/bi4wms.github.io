@@ -7,19 +7,25 @@ order: 6
 ---
 
 <style>
-/* 精确对齐 Chirpy 官方首页卡片风格 + 完美 Dark Mode 支持 */
-.card-title {
+/* 参照 Chirpy 官方首页卡片风格 + 完整 Dark Mode 支持 */
+.card-title,
+.card-title a {
     font-size: 1.25rem !important;
     line-height: 1.35 !important;
-    margin-top: 0.25rem !important;    /* 标题上方留白已最小化 */
+    margin-top: 0.25rem !important;
     margin-bottom: 0.65rem !important;
+    color: var(--link-color) !important;        /* 标题链接跟随主题颜色 */
+}
+
+.card-title a:hover {
+    color: var(--link-hover-color) !important;  /* hover 时更明显 */
 }
 
 .card-body {
     padding: 1.35rem 1.4rem !important;
 }
 
-/* 卡片间距与首页一致 */
+/* 卡片整体样式 */
 .post-list {
     gap: 1.55rem !important;
 }
@@ -37,23 +43,29 @@ order: 6
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* 关键修复：让缩略文（excerpt）在 Dark Mode 下清晰可见 */
+/* 缩略文（excerpt） - 已修复 Dark Mode 可见性 */
 .card-text {
-    color: var(--text-color) !important;     /* 改为主体文字颜色（首页卡片常用） */
+    color: var(--text-color) !important;
     margin-bottom: 0.85rem !important;
     font-size: 0.95rem !important;
 }
 
-/* 备用方案：如果上面还不够清晰，可尝试这个（取消注释使用） */
- /* .card-text { color: var(--text-muted) !important; } */
-
-.post-meta {
+/* 日期 - 强制跟随 Dark Mode（首页标准方式） */
+.post-meta,
+.post-meta time {
     color: var(--text-muted) !important;
     font-size: 0.9rem;
 }
 
+/* 阅读全文链接 - 跟随系统调整 */
 .read-more {
     color: var(--link-color) !important;
+    font-weight: 500;
+}
+
+.read-more:hover {
+    color: var(--link-hover-color) !important;
+    text-decoration: underline;
 }
 </style>
 
