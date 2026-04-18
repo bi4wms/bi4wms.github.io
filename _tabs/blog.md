@@ -19,7 +19,7 @@ order: 6
         {% if post.description %}
           <p class="card-text content">{{ post.description }}</p>
         {% elsif post.excerpt %}
-          <p class="card-text content">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+          <p class="card-text content">{{ post.excerpt | strip_html | truncate: 180 }}</p>
         {% endif %}
 
         <div class="post-meta">
@@ -27,18 +27,18 @@ order: 6
           
           {% if post.tags.size > 0 %}
             • 
-            {% for tag in post.tags limit: 3 %}
+            {% for tag in post.tags limit: 4 %}
               <a href="{{ '/tags/' | append: tag | relative_url }}" class="tag">#{{ tag }}</a>
             {% endfor %}
           {% endif %}
         </div>
 
-        <a href="{{ post.url | relative_url }}" class="read-more">阅读全文 →</a>
+        <a href="{{ post.url | relative_url }}" class="btn btn-outline-primary read-more">阅读全文 →</a>
       </div>
     </article>
   {% endfor %}
 </div>
 
 {% if blog_posts.size == 0 %}
-  <p>暂无 Blog 文章</p>
+  <p class="text-center py-5">暂无 Blog 文章</p>
 {% endif %}
