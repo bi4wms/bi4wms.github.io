@@ -7,11 +7,11 @@ order: 6
 ---
 
 <style>
-/* 精确对齐 Chirpy 官方首页卡片风格 + 完美支持 Dark Mode */
+/* 精确对齐 Chirpy 官方首页卡片风格 + 完美 Dark Mode 支持 */
 .card-title {
     font-size: 1.25rem !important;
     line-height: 1.35 !important;
-    margin-top: 0.25rem !important;    /* 解决标题上方留白过大 */
+    margin-top: 0.25rem !important;    /* 标题上方留白已最小化 */
     margin-bottom: 0.65rem !important;
 }
 
@@ -34,14 +34,18 @@ order: 6
 
 .post-list .card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important; /* 浅色下明显，深色下柔和 */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* 文字颜色跟随 Dark Mode */
+/* 关键修复：让缩略文（excerpt）在 Dark Mode 下清晰可见 */
 .card-text {
-    color: var(--text-muted) !important;
-    margin-bottom: 0.8rem;
+    color: var(--text-color) !important;     /* 改为主体文字颜色（首页卡片常用） */
+    margin-bottom: 0.85rem !important;
+    font-size: 0.95rem !important;
 }
+
+/* 备用方案：如果上面还不够清晰，可尝试这个（取消注释使用） */
+ /* .card-text { color: var(--text-muted) !important; } */
 
 .post-meta {
     color: var(--text-muted) !important;
