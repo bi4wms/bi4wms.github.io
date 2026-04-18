@@ -1,9 +1,9 @@
 ---
-title: Blog
+title: projects
 layout: page
-permalink: /blog/
+permalink: /projects/
 icon: fas fa-newspaper
-order: 6
+order: 1
 ---
 
 <style>
