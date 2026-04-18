@@ -1,5 +1,5 @@
 ---
 layout: categories
-icon: fas fa-layer-group
+icon: fas fa-server
 order: 3
 ---
