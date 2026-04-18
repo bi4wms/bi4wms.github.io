@@ -3,7 +3,7 @@ title: Tutorials
 layout: page
 icon: fas fa-book
 permalink: /tutorials/
-order: 2
+order: 3
 ---
 
 <style>
