@@ -2,7 +2,7 @@
 title: Projects
 layout: page
 permalink: /projects/
-icon: fas fa-newspaper
+icon: fas fa-microchip
 order: 1
 ---
 
