@@ -1,23 +1,29 @@
 ---
 layout: tags
+title: Tags
 icon: fas fa-tags
 order: 7
 ---
 
 <style>
-/* 强制隐藏左侧导航栏中的 Tags（最高优先级） */
+/* 最高优先级强制隐藏 Tags 导航项 */
+#sidebar .nav-link[href*="/tags"],
 .sidebar .nav-link[href*="/tags"],
-.sidebar a[href*="/tags"],
-#sidebar a[href*="/tags"],
+#nav .nav-link[href*="/tags"],
 .nav-pills .nav-link[href*="/tags"],
-li:has(a[href*="/tags"]) {
+.sidebar li a[href*="/tags"],
+#sidebar li a[href*="/tags"] {
     display: none !important;
 }
 
-/* 同时兼容可能的不同结构 */
-#sidebar .nav-item a[title="Tags"],
-.sidebar .nav-item:has(.fa-tags),
-.sidebar li a[href$="/tags/"] {
+#sidebar .nav-item:has(a[href*="/tags"]),
+.sidebar .nav-item:has(a[href*="/tags"]) {
+    display: none !important;
+}
+
+/* 隐藏图标和可能残留的项 */
+.sidebar .fa-tags,
+#sidebar .fa-tags {
     display: none !important;
 }
 </style>
