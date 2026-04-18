@@ -1,10 +1,9 @@
 ---
 title: Guides
-layout: category
+layout: page
 icon: fas fa-book-open
 permalink: /guides/
 order: 7
-category: Tutorial
 ---
 {% assign blog_posts = site.posts | where_exp: "post", "post.categories contains 'Tutorial'" | sort: "date" | reverse %}
 
