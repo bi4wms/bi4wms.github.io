@@ -87,7 +87,7 @@ html[data-mode="dark"] .card-title a {
 }
 </style>
 
-{% assign blog_posts = site.posts | where_exp: "post", "post.categories contains 'Blog'" | sort: "date" | reverse %}
+{% assign blog_posts = site.posts | where_exp: "post", "post.categories contains 'projects'" | sort: "date" | reverse %}
 
 <div class="post-list" style="display: flex; flex-direction: column; gap: 1.55rem;">
   {% for post in blog_posts %}
@@ -107,7 +107,7 @@ html[data-mode="dark"] .card-title a {
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
         </div>
 
-        <a href="{{ post.url | relative_url }}" class="read-more">阅读全文 →</a>
+        <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
       </div>
     </article>
   {% endfor %}
