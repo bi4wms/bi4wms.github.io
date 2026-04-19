@@ -107,7 +107,7 @@ html[data-mode="dark"] .card-title a {
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
         </div>
 
-        <a href="{{ post.url | relative_url }}" class="read-more">阅读全文 →</a>
+        <a href="{{ post.url | relative_url }}" class="read-more">Read More →</a>
       </div>
     </article>
   {% endfor %}
