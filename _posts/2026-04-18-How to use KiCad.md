@@ -7,7 +7,7 @@ layout: post
 toc: true
 comments: true
 ---
-
+1
 # KiCad Circuit Design Software Usage Guide
 
 ## Part 1: Schematic Design
