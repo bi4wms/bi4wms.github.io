@@ -1,4 +1,5 @@
 ---
+title: Platforms
 icon: fas fa-server
 order: 4
 ---
