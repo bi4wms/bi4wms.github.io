@@ -114,5 +114,5 @@ html[data-mode="dark"] .card-title a {
 </div>
 
 {% if blog_posts.size == 0 %}
-  <p class="text-center py-5">暂无 Blog 文章</p>
+  <p class="text-center py-5">No posts yet. Stay tuned!</p>
 {% endif %}
