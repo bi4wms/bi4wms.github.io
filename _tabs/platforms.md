@@ -3,7 +3,7 @@ layout: categories
 icon: fas fa-server
 order: 4
 ---
-{% assign wanted_parent = "Platforms" %}   <!-- 只显示这个大分类及其子分类 -->
+{% assign wanted_parent = "Platforms" %}   <!-- ← 只改这里，确保和文章里写的完全一致（区分大小写） -->
 
 <h1 class="page-title">{{ page.title }}</h1>
 
@@ -11,6 +11,7 @@ order: 4
   {% for cat in site.categories %}
     {% assign parent = cat[0] %}
 
+    <!-- 只显示 Platforms 这个大分类 -->
     {% if parent == wanted_parent %}
       <div class="category">
         <h2 id="{{ parent | slugify }}">
@@ -20,12 +21,12 @@ order: 4
           <small>({{ cat[1].size }} posts)</small>
         </h2>
 
-        <!-- 显示子分类（自动收集并去重） -->
+        <!-- 自动收集并显示所有子分类（去重 + 排序） -->
         {% assign subcats = "" | split: "," %}
         {% for post in cat[1] %}
           {% if post.categories.size > 1 %}
             {% assign sub = post.categories[1] %}
-            {% unless subcats contains sub %}
+            {% unless subcats contains sub or sub == parent %}
               {% assign subcats = subcats | push: sub %}
             {% endunless %}
           {% endif %}
