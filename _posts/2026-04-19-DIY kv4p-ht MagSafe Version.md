@@ -10,6 +10,11 @@ comments: true
 
 ### KV4P-HT: Turning Your Android Phone into a Portable Ham Radio
 
+All design files can be found in my github
+https://github.com/bi4wms/kv4p-ht-MagSafe
+[KV4P-HT-MagSafe](https://github.com/bi4wms/kv4p-ht-MagSafe)
+
+
 <img width="877" height="671" alt="image" src="https://github.com/user-attachments/assets/fdcfdee2-3ad9-4425-a999-20da6b311bc2" />
 
 
@@ -19,7 +24,18 @@ The official project provides implementations using off-the-shelf development bo
 
 Although KV4P-HT does not yet support iOS, many modern Android phones now feature MagSafe-like magnetic attachment. Designing a magnetic version of KV4P-HT would make it much more convenient to attach and detach on the go. Inspired by the sleek MagSafe case from the Meshmastic project, I decided to create my own magnetic enclosure.
 
+<img width="865" height="662" alt="image" src="https://github.com/user-attachments/assets/4723d463-9355-406a-aece-3809a6acef4c" />
+
+
 Additionally, I found the official KiCad project could be improved in terms of style, organization, and standardization. Therefore, I am refactoring and optimizing it.
+
+<img width="865" height="581" alt="image" src="https://github.com/user-attachments/assets/a79f3f93-f570-49f7-b00f-d13aab5a4a55" />
+
+<img width="1089" height="649" alt="image" src="https://github.com/user-attachments/assets/814df652-de5c-4904-8342-60dc8563e53b" />
+
+<img width="1124" height="603" alt="image" src="https://github.com/user-attachments/assets/c9d55291-d3e8-403d-b93a-479452ba2d3e" />
+
+
 
 **Main Changes in This Revision:**
 - Schematic connectivity remains largely unchanged.
@@ -31,9 +47,6 @@ Additionally, I found the official KiCad project could be improved in terms of s
 2. The enclosure design is too thick. I plan to switch to a sandwich-style SMA connector to reduce thickness.
 3. The 3D model lacks a dedicated slot for the ferrite bead, causing it to protrude significantly and affecting the overall appearance.
 
-
-[[![](https://www.youtube.com/shorts/y1fTFUp0ZME)](https://youtube.com/shorts/y1fTFUp0ZME?si=IPtniJEnFW-d2lGv)
----
+[![Watch the video](https://img.youtube.com/vi/y1fTFUp0ZME/0.jpg)](https://youtube.com/shorts/y1fTFUp0ZME)
 
 
-*(Video demonstration will be added later)*
