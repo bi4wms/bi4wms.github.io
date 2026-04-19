@@ -11,7 +11,7 @@ comments: true
 ### KV4P-HT: Turning Your Android Phone into a Portable Ham Radio
 
 All design files can be found in my github
-https://github.com/bi4wms/kv4p-ht-MagSafe
+
 [KV4P-HT-MagSafe](https://github.com/bi4wms/kv4p-ht-MagSafe)
 
 
