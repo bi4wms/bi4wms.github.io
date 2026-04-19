@@ -1,12 +1,11 @@
 ---
+layout: categories
 title: Platforms
 icon: fas fa-server
 order: 4
 ---
 
 {% assign wanted_parent = "Platforms" %}
-
-<h1 class="page-title">{{ page.title }}</h1>
 
 {% for cat in site.categories %}
   {% if cat[0] == wanted_parent %}
@@ -23,7 +22,6 @@ order: 4
     {% endfor %}
     {% assign subcats = subcats | sort %}
 
-    <!-- 模仿官方 Categories 卡片样式 -->
     <article class="card categories">
       <div class="card-header d-flex justify-content-between align-items-center">
         <span>
