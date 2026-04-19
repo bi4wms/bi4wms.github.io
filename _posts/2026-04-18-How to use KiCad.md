@@ -13,10 +13,10 @@ comments: true
 ## Part 1: Schematic Design
 
 ### 1.1 Create a New Project
-(/assets/img/postimg/tutorial/howtousekicad/1.png){: w="700" h="400" }
+![](/assets/img/postimg/tutorial/howtousekicad/1.png){: w="700" h="400" }
 
 ### 1.2 Open Schematic Design
-(/assets/img/postimg/tutorial/howtousekicad/2.png){: w="700" h="400" }
+![](/assets/img/postimg/tutorial/howtousekicad/2.png){: w="700" h="400" }
 
 ### 1.3 Double-click to Open the Schematic  
 By default, this opens the root schematic page.
