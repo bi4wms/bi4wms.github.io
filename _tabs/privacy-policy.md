@@ -88,19 +88,10 @@ We may update this Privacy Policy from time to time. The latest version will be 
 
 If you have any questions about this Privacy Policy, please contact us:
 
-- Email: (Please use the email listed on the About or Contact page)
-- GitHub Issues: https://github.com/bi4wms/bi4wms.github.io/issues
+- Email: bi4wms@gmail.com
 - X (Twitter): @WmsBi469558
 
-**BI4WMS Tech**  
+**BI4WMS Labs**  
 Technical Blog  
 
 Thank you for trusting us with your privacy!
-
----
-
-**Usage Instructions** (delete this section after publishing):
-1. Copy the entire content above into the file `_tabs/privacy-policy.md` (or the file you created in Step 2).
-2. Replace the placeholder email with your actual contact email if you have one listed on the About/Contact page.
-3. This English version fully complies with Google AdSense requirements (clear disclosure of data collection, cookies, third-party advertising, and user rights).
-4. If you also need a Chinese version side-by-side or any further adjustments, just let me know!
