@@ -87,7 +87,7 @@ html[data-mode="dark"] .card-title a {
 }
 </style>
 
-{% assign blog_posts = site.posts | where_exp: "post", "post.categories contains 'projects'" | sort: "date" | reverse %}
+{% assign blog_posts = site.posts | where_exp: "post", "post.categories contains 'Projects'" | sort: "date" | reverse %}
 
 <div class="post-list" style="display: flex; flex-direction: column; gap: 1.55rem;">
   {% for post in blog_posts %}
