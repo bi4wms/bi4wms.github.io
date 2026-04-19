@@ -218,8 +218,11 @@ Select file save location.
 ![](/assets/img/postimg/tutorial/howtousekicad/5.2-2.png){: w="700" h="400" }
 
 ### 5.3 Generate Drill Files  
+
 ![](/assets/img/postimg/tutorial/howtousekicad/5.3.png){: w="700" h="400" }
+
 Save in the same location as Gerber files.
+
 ![](/assets/img/postimg/tutorial/howtousekicad/5.3-2.png){: w="700" h="400" }
 
 ### 5.4 Use KiCad Gerber Viewer Verify generated files.  
@@ -228,6 +231,7 @@ Save in the same location as Gerber files.
 
 ### 5.5 Generate Position (Pick-and-Place) Files  
 ![](/assets/img/postimg/tutorial/howtousekicad/5.5.png){: w="700" h="400" }
+
 Choose save path.
 ![](/assets/img/postimg/tutorial/howtousekicad/5.5-2.png){: w="700" h="400" }
 
