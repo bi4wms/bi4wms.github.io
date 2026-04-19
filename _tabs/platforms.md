@@ -1,13 +1,9 @@
 ---
-title: Platforms
 icon: fas fa-server
 order: 4
 ---
 
 {% assign wanted_parent = "Platforms" %}
-
-<h1 class="page-title">{{ page.title }}</h1>
-
 <div class="categories">
   {% for cat in site.categories %}
     {% assign parent = cat[0] %}
