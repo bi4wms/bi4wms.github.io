@@ -3,42 +3,52 @@ icon: fas fa-server
 order: 4
 ---
 
+<h1 class="page-title">{{ page.title }}</h1>
+
 {% assign wanted_parent = "Platforms" %}
-<div class="categories">
-  {% for cat in site.categories %}
-    {% assign parent = cat[0] %}
 
-    {% if parent == wanted_parent %}
-      <div class="category">
-        <h2>
-          {{ parent }}
-          <small>({{ cat[1].size }} posts)</small>
-        </h2>
+{% for cat in site.categories %}
+  {% if cat[0] == wanted_parent %}
+    {% assign subcats = "" | split: "," %}
 
-        <!-- 收集子分类（去重 + 排序） -->
-        {% assign subcats = "" | split: "," %}
-        {% for post in cat[1] %}
-          {% if post.categories.size > 1 %}
-            {% assign sub = post.categories[1] %}
-            {% unless subcats contains sub or sub == parent %}
-              {% assign subcats = subcats | push: sub %}
-            {% endunless %}
-          {% endif %}
-        {% endfor %}
+    <!-- 收集所有子分类（去重） -->
+    {% for post in cat[1] %}
+      {% if post.categories.size > 1 %}
+        {% assign sub = post.categories[1] %}
+        {% unless subcats contains sub %}
+          {% assign subcats = subcats | push: sub %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
 
-        {% if subcats.size > 0 %}
-          <ul class="subcategories">
-            {% for sub in subcats | sort %}
-              <li>
-                <a href="{{ site.baseurl }}/categories/{{ sub | slugify }}/">
-                  {{ sub }}
-                </a>
-                <small>({{ site.categories[sub] | size | default: 0 }} posts)</small>
-              </li>
-            {% endfor %}
-          </ul>
-        {% endif %}
+    {% assign subcats = subcats | sort %}
+
+    <!-- 模仿官方 Categories 卡片样式 -->
+    <article class="card categories">
+      <div class="card-header d-flex justify-content-between">
+        <span>
+          <i class="far fa-folder-open fa-fw"></i>
+          <span class="mx-2">{{ wanted_parent }}</span>
+          <span class="text-muted small">({{ subcats.size }} categories, {{ cat[1].size }} posts)</span>
+        </span>
+        <i class="fas fa-chevron-down"></i>
       </div>
-    {% endif %}
-  {% endfor %}
-</div>
+
+      <div class="collapse show">
+        <ul class="list-group list-group-flush">
+          {% for sub in subcats %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <span>
+                <i class="far fa-folder fa-fw"></i>
+                <a href="{{ site.baseurl }}/categories/{{ sub | slugify | url_encode }}/" class="mx-2">{{ sub }}</a>
+              </span>
+              <span class="badge bg-light text-dark">
+                {{ site.categories[sub] | size | default: 0 }} posts
+              </span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </article>
+  {% endif %}
+{% endfor %}
