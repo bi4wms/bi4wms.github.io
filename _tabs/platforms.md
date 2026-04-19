@@ -4,14 +4,14 @@ icon: fas fa-server
 order: 4
 ---
 
-<h1 class="page-title">{{ page.title }}</h1>
-
 {% assign wanted_parent = "Platforms" %}
+
+<h1 class="page-title">{{ page.title }}</h1>
 
 {% for cat in site.categories %}
   {% if cat[0] == wanted_parent %}
 
-    <!-- 收集子分类 -->
+    <!-- 收集子分类（去重并排序） -->
     {% assign subcats = "" | split: "," %}
     {% for post in cat[1] %}
       {% if post.categories.size > 1 %}
@@ -23,7 +23,7 @@ order: 4
     {% endfor %}
     {% assign subcats = subcats | sort %}
 
-    <!-- 模仿官方 Categories 卡片样式（去掉多余 Platforms (1 posts)） -->
+    <!-- 模仿官方 Categories 卡片样式 -->
     <article class="card categories">
       <div class="card-header d-flex justify-content-between align-items-center">
         <span>
