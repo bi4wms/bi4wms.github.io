@@ -50,13 +50,32 @@ Additionally, I found the official KiCad project could be improved in terms of s
 
 ## Materials and Tools Needed
 
-列清单（非常重要）：
-
 KV4P HT board
 MagSafe magnet ring
 Power components
 3D printed case (if any)
 Tools (soldering iron, etc.)
+
+## Step-by-Step KV4P HT MagSafe Build
+
+👉 这是核心流量部分，一定要结构化：
+
+### Step 1: Prepare the KV4P HT board
+
+（你的原内容）
+
+### Step 2: Attach MagSafe ring
+
+（你的改造重点）
+
+### Step 3: Wiring and power setup
+### Step 4: Testing and setup
+
+👉 每一步尽量：
+
+有解释
+有图片（如果有）
+有注意点
 
 **Main Changes in This Revision:**
 - Schematic connectivity remains largely unchanged.
@@ -70,4 +89,21 @@ Tools (soldering iron, etc.)
 
 [![Watch the video](https://img.youtube.com/vi/y1fTFUp0ZME/0.jpg)](https://youtube.com/shorts/y1fTFUp0ZME)
 
+## Common Issues and Fixes（强烈建议加）
 
+KV4P HT not working?
+Check wiring
+Check app config
+MagSafe not aligned?
+Adjust ring position
+Use stronger magnets
+
+## Who Is This Project For?
+Ham radio hobbyists
+DIY electronics enthusiasts
+Android tinkerers
+
+## Final Thoughts
+KV4P HT + MagSafe makes setup cleaner
+Easy portable radio solution
+Great DIY project
