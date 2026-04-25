@@ -1,8 +1,8 @@
 ---
 title: "KiCad Tutorial 2026: Design Schematics, Build PCBs, and Generate Gerber Files Like a Pro"
 date: 2026-04-18 10:40:10 +0800
-categories: [Tutorial]
-tags: [kicad, pcb-design, schematic, pcb-layout, gerber]
+categories: [Tutorial, KiCad]
+tags: [KiCad, Pcb-design, Schematic, Gerber]
 layout: post
 toc: true
 comments: true
