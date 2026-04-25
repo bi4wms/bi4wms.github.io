@@ -225,3 +225,8 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# 修复 sitemap 重复
+sitemap:
+  exclude:
+    - /tags/kicad/
