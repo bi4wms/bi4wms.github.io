@@ -1,5 +1,5 @@
 ---
-title: SimpleFOC Integrated Board Hardware in Practice-From Zero to Getting Started (1)
+title: SimpleFOC Integrated Board Hardware in Practice-From zero to one
 date: 2026-04-25 10:10:10 +0800
 categories: [Projects, Simplefoc]
 tags: [Simplefoc, Arduino, Altium, STM32F103CBT6, Blushless motor]
@@ -7,8 +7,6 @@ layout: post
 toc: true
 comments: true
 ---
-
-# SimpleFOC Integrated Board Hardware in Practice: From Zero to Getting Started (1)
 
 ## Why Do We Need a Tail-Mounted SimpleFOC Integrated Board?
 
