@@ -1,7 +1,7 @@
 ---
 title: KV4P HT DIY Guide-Add MagSafe Mount for Android Ham Radio
 date: 2026-04-19 10:10:10 +0800
-categories: [Projects]
+categories: [Projects, kv4p-ht]
 tags: [kicad, hamradio, kv4p-ht, MagSafe, 3D-Print]
 layout: post
 toc: true
