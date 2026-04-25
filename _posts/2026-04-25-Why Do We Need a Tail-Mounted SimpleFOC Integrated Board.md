@@ -33,7 +33,7 @@ This is a record of my journey learning **SimpleFOC**, aimed at helping beginner
 
 *Control demo video:*
 
-[![Demo Video](https://img.youtube.com/vi/-CYr3gOOTzE/0.jpg)](https://youtube.com/shorts/-CYr3gOOTzE)
+ [![Demo Video](https://img.youtube.com/vi/-CYr3gOOTzE/0.jpg)](https://youtube.com/shorts/-CYr3gOOTzE)
 
 ---
 
