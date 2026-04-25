@@ -4,8 +4,6 @@ icon: fas fa-user
 order: 5
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
 
 **BI4WMS Labs** is a personal technical blog focused on embedded systems and hardware development.
 
