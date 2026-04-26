@@ -16,8 +16,12 @@ comments: true
 🎥 **Demo Video:**  
 https://youtube.com/shorts/id5blkNelKI?feature=share
 
-![Project Banner](./images/banner.jpg)
-<!-- 推荐：整体成品图 / 桌面使用场景图 -->
+
+PCBA and 3D printed case
+
+<img width="865" height="525" alt="image" src="https://github.com/user-attachments/assets/3460a333-18ea-4a40-83d8-9b5ba97710c1" />
+
+
 
 There is a very popular multifunction oscilloscope project on GitHub that uses an STM32 development board. With just a few Dupont wires and a USB cable, it can be turned into a versatile instrument featuring:
 
@@ -64,13 +68,11 @@ To address this, I designed a **custom hardware solution**, including:
 
 ## Hardware Design
 
-![PCB Top View](./images/pcb_top.png)
-<!-- PCB正面 -->
-
-![PCB Bottom View](./images/pcb_bottom.png)
-<!-- PCB背面 -->
-
 The design is based on the widely used **STM32F103C8T6**, which is also used in my integrated SimpleFOC project.
+
+<img width="865" height="678" alt="image" src="https://github.com/user-attachments/assets/8dbbecd9-b8bc-4e10-bd33-0a7c74f64e74" />
+
+
 
 The firmware implementation is relatively straightforward, mainly leveraging:
 
@@ -93,8 +95,9 @@ Following the original Blue Pill (STM32F103C8T6) design:
 
 ## Schematic Design
 
-![Schematic](./images/schematic.png)
-<!-- 原理图截图 -->
+
+<img width="865" height="389" alt="image" src="https://github.com/user-attachments/assets/e5579fe0-bba7-4044-9bb5-61fa7ddb4872" />
+
 
 The schematic is built around a **minimal STM32F103C8T6 system**, with all required pins broken out for easy access.
 
@@ -102,8 +105,12 @@ The schematic is built around a **minimal STM32F103C8T6 system**, with all requi
 
 ## PCB Design
 
-![PCB 3D View](./images/pcb_3d.png)
-<!-- 3D PCB 渲染图 -->
+TOP
+<img width="865" height="463" alt="image" src="https://github.com/user-attachments/assets/c3e18c2e-faf8-4114-9b92-cd86b9d05395" />
+
+BOTTOM
+<img width="865" height="487" alt="image" src="https://github.com/user-attachments/assets/aff6289c-b6e4-4a65-9df3-5f93b2997624" />
+
 
 Given the simplicity of the circuit, a **2-layer PCB** is sufficient.
 
@@ -114,8 +121,8 @@ Given the simplicity of the circuit, a **2-layer PCB** is sufficient.
 
 ## 3D PCBA
 
-![3D Assembly](./images/pcba_3d.png)
-<!-- 带元件的3D模型 -->
+<img width="865" height="511" alt="image" src="https://github.com/user-attachments/assets/ea99b211-2c13-4fe9-be2a-ab02f43b39eb" />
+
 
 A full 3D model of the assembled PCB was created to verify mechanical compatibility with the enclosure.
 
@@ -123,20 +130,18 @@ A full 3D model of the assembled PCB was created to verify mechanical compatibil
 
 ## IBOM (Interactive BOM)
 
-![IBOM](./images/ibom.png)
-<!-- IBOM截图 -->
-
 An interactive BOM was generated to simplify assembly and component identification.
+
+<img width="865" height="435" alt="image" src="https://github.com/user-attachments/assets/18130ce8-4cd8-431c-8838-310886c864f2" />
+
+
 
 ---
 
 ## Enclosure & Silkscreen
 
-![Enclosure](./images/enclosure.png)
-<!-- 外壳渲染图 -->
+<img width="865" height="525" alt="image" src="https://github.com/user-attachments/assets/7a69e99d-6866-4e45-983d-0319e45c82a9" />
 
-![Silkscreen](./images/silkscreen.png)
-<!-- 丝印贴纸 -->
 
 The enclosure and silkscreen graphics were designed using **JLCEDA**:
 
@@ -148,8 +153,8 @@ The enclosure and silkscreen graphics were designed using **JLCEDA**:
 
 ## Usage
 
-![Software UI](./images/software.png)
-<!-- 上位机界面截图 -->
+<img width="865" height="384" alt="image" src="https://github.com/user-attachments/assets/b90b4563-8e21-49cd-aec7-b642a0042b74" />
+
 
 The device connects directly to a PC via a **USB Type-C cable**.
 
