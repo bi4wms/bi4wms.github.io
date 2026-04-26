@@ -41,10 +41,8 @@ https://github.com/parezj/EMBO
 ## 🚀 My Hardware Implementation
 
 🔗 **Project repository:**  
-https://github.com/bi4wms/MiniMultiScope  
 
-![Finished Device](./images/device.jpg)
-<!-- 推荐：装好外壳的成品照片 -->
+https://github.com/bi4wms/MiniMultiScope  
 
 To improve usability, I designed a **dedicated hardware version** of this project.
 
