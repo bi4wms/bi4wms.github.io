@@ -1,5 +1,5 @@
 ---
-title: Build a Portable STM32 Oscilloscope & Logic Analyzer (DIY Multi-Function Tool)
+title: How to Build a DIY STM32 Oscilloscope (Step-by-Step Guide)
 date: 2026-04-26 10:10:10 +0800
 categories: [Projects, Oscilloscope]
 tags: [Oscilloscope, Logic Analyzer, Altium, STM32F103CBT6, 3D-printed]
@@ -185,7 +185,7 @@ All files are available in the GitHub repository:
 - Silkscreen files  
 
 🔗 Repository:  
-[BI4WMS Scope Hardeware](https://github.com/bi4wms/MiniMultiScope) 
+[BI4WMS Scope Hardware](https://github.com/bi4wms/MiniMultiScope) 
 
 ---
 
