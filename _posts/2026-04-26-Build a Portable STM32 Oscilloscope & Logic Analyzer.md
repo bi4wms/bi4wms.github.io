@@ -13,11 +13,7 @@ comments: true
 [![Watch Demo Video](https://img.youtube.com/vi/id5blkNelKI/0.jpg)](https://youtube.com/shorts/id5blkNelKI?feature=share)
 <!-- 点击图片可跳转到 YouTube 视频 -->
 
-🎥 **Demo Video:**  
-https://youtube.com/shorts/id5blkNelKI?feature=share
-
-
-PCBA and 3D printed case
+🎥 **PCBA and 3D printed case:**  
 
 <img width="865" height="525" alt="image" src="https://github.com/user-attachments/assets/3460a333-18ea-4a40-83d8-9b5ba97710c1" />
 
@@ -34,7 +30,8 @@ There is a very popular multifunction oscilloscope project on GitHub that uses a
 The project also provides a Qt-based desktop application that supports **Windows, Linux, and macOS**, making it truly cross-platform.
 
 🔗 Original project:  
-https://github.com/parezj/EMBO
+
+[EMBO Scope](https://github.com/bi4wms/MiniMultiScope)
 
 ---
 
@@ -42,7 +39,7 @@ https://github.com/parezj/EMBO
 
 🔗 **Project repository:**  
 
-https://github.com/bi4wms/MiniMultiScope  
+[BI4WMS Scope Hardeware](https://github.com/bi4wms/MiniMultiScope)
 
 To improve usability, I designed a **dedicated hardware version** of this project.
 
@@ -188,7 +185,7 @@ All files are available in the GitHub repository:
 - Silkscreen files  
 
 🔗 Repository:  
-https://github.com/bi4wms/MiniMultiScope  
+[BI4WMS Scope Hardeware](https://github.com/bi4wms/MiniMultiScope) 
 
 ---
 
