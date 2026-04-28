@@ -19,6 +19,7 @@ Thank you for reading and supporting the blog!
 
 Feel free to reach out using any of the following methods:
 
+- **AboutMe**: [AboutMe](https://github.com/bi4wms/AboutMe)
 - **Email**: (bi4wms@gmail.com)
 - **GitHub Issues**: https://github.com/bi4wms/bi4wms.github.io/issues
 - **X (Twitter)**: [@WmsBi469558](https://twitter.com/WmsBi469558)
