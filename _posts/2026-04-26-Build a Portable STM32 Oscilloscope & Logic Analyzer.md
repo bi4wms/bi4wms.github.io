@@ -6,12 +6,13 @@ tags: [Oscilloscope, Logic Analyzer, Altium, STM32F103CBT6, 3D-printed]
 layout: post
 toc: true
 comments: true
+image: /assets/img/scope.png
 ---
 
 # A Compact STM32-Based Multifunction Instrument (Oscilloscope + Logic Analyzer + More)
 
 [![Watch Demo Video](https://img.youtube.com/vi/id5blkNelKI/0.jpg)](https://youtube.com/shorts/id5blkNelKI?feature=share)
-<!-- 点击图片可跳转到 YouTube 视频 -->
+<!-- jump to YouTube video -->
 
 🎥 **PCBA and 3D printed case:**  
 
