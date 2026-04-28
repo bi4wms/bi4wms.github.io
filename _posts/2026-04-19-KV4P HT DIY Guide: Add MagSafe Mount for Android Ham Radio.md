@@ -56,27 +56,6 @@ Power components
 3D printed case (if any)
 Tools (soldering iron, etc.)
 
-## Step-by-Step KV4P HT MagSafe Build
-
-👉 这是核心流量部分，一定要结构化：
-
-### Step 1: Prepare the KV4P HT board
-
-（你的原内容）
-
-### Step 2: Attach MagSafe ring
-
-（你的改造重点）
-
-### Step 3: Wiring and power setup
-### Step 4: Testing and setup
-
-👉 每一步尽量：
-
-有解释
-有图片（如果有）
-有注意点
-
 **Main Changes in This Revision:**
 - Schematic connectivity remains largely unchanged.
 - Replaced the USB-to-serial chip from CP2102N to **CH340K** (the original CP2102N is more expensive and harder to hand-solder).
@@ -89,7 +68,7 @@ Tools (soldering iron, etc.)
 
 [![Watch the video](https://img.youtube.com/vi/y1fTFUp0ZME/0.jpg)](https://youtube.com/shorts/y1fTFUp0ZME)
 
-## Common Issues and Fixes（强烈建议加）
+## Common Issues and Fixes
 
 KV4P HT not working?
 Check wiring
