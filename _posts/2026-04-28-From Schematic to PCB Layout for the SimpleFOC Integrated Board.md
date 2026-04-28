@@ -6,6 +6,7 @@ tags: [Simplefoc, Arduino, Altium, STM32F103CBT6, Motor]
 layout: post
 toc: true
 comments: true
+image: /assets/img/simplefoc-block.png
 ---
 
 **SimpleFOC Integrated Board Hardware Practice: From Zero to One (2) – From Schematic to PCB Layout, Teaching You How to Design an FOC Control Board That Can Be Directly Mounted on the Motor**
