@@ -6,6 +6,7 @@ tags: [Simplefoc, Arduino, Altium, STM32F103CBT6, Blushless motor]
 layout: post
 toc: true
 comments: true
+image: /assets/img/simplefoc-pcba.png
 ---
 
 ## Why Do We Need a Tail-Mounted SimpleFOC Integrated Board?
