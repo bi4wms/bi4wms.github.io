@@ -30,7 +30,9 @@ The previous article mentioned some advantages and disadvantages of the official
 These 10 considerations basically cover all the key details needed for the design.
 
 ### Overall Hardware Architecture Block Diagram
-Hand-drawn supplement: MCU + Driver + Power Supply + Magnetic Encoder + USB-to-Serial
+MCU + Driver + Power Supply + Magnetic Encoder + USB-to-Serial
+<img width="1116" height="588" alt="image" src="https://github.com/user-attachments/assets/2a072a98-206b-4d10-b65a-351195aeebc3" />
+
 
 ### Main Chip Selection Rationale
 - **Main controller**: STM32F103CBT6  
@@ -46,6 +48,9 @@ These have already been explained in the design considerations above.
 ### Schematic Design
 The hardware was designed using Altium Designer. Source files are available for download on GitHub.
 
+<img width="865" height="504" alt="image" src="https://github.com/user-attachments/assets/1c1c99b6-e502-41b6-bf12-ba3c54dda4ed" />
+
+
 The schematic is relatively simple. Here’s a quick analysis:
 
 **Top-left section**: STM32F103 minimum system circuit. Key points to note:
@@ -60,22 +65,37 @@ Since the microcontroller itself supports USB CDC, the CH340E was designed with 
 A circular board design with a diameter of 43 mm was adopted. Four 3 mm elongated slots are cut in the center, compatible with 2204–4010 size brushless motors. These slots also naturally divide the board into functional zones, reducing interference: one zone for the microcontroller system, one for the switching power supply, and one for the driver circuit.
 
 The front side contains the power indicator LED, system status LED, DRV driver chip, buttons, and interface components.
+<img width="865" height="865" alt="image" src="https://github.com/user-attachments/assets/752c4270-d040-4af9-b125-c7c83f7a7977" />
+
 
 The back side holds most of the SMD components. Since JLCPCB’s SMT service is very affordable, all SMD parts were placed on one side. Only a few larger through-hole components that are easy to hand-solder are on the other side. The two indicator LEDs had to be placed on the back of the magnetic encoder chip because the encoder must face the motor tail directly.
+
+<img width="865" height="865" alt="image" src="https://github.com/user-attachments/assets/88cac809-9716-491b-a491-8e44b6622173" />
+
 
 ### Routing Instructions
 
 **Top Layer**  
 Fewer components. Mainly power ground and high-current traces for the DRV driver chip, plus control lines. Control lines are guarded with ground to reduce interference.
 
+<img width="865" height="782" alt="image" src="https://github.com/user-attachments/assets/33428da3-67cf-4e61-8761-08480e814f5c" />
+
+
 **Second Layer**  
 Complete ground plane with strong/weak current area separation lines to maximize isolation between power and signal sections and minimize interference.
+
+<img width="865" height="759" alt="image" src="https://github.com/user-attachments/assets/83feb7d7-465f-47eb-bb0e-d35613246cdb" />
 
 **Third Layer**  
 Used for sensitive traces, such as current sampling lines.
 
+<img width="865" height="687" alt="image" src="https://github.com/user-attachments/assets/58450062-65be-4286-8fdd-84480b2f4376" />
+
 **Bottom Layer**  
 Most components are here. Routing follows the pre-planned regional divisions—each functional block stays within its own area. Differential pairs and sensitive signals are kept away from interference sources as much as possible.
+
+<img width="865" height="769" alt="image" src="https://github.com/user-attachments/assets/4c638fb4-f2c7-42e9-b5fb-8351a67d170e" />
+
 
 ### Complete Design Materials
 Reference: [https://github.com/bi4wms/SimpleFOC](https://github.com/bi4wms/SimpleFOC)
