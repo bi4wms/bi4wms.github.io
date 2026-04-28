@@ -1,5 +1,5 @@
 ---
-title: SimpleFOC Integrated Board Hardware in Practice-From Zero to One - part2
+title: Part2 SimpleFOC Integrated Board Hardware in Practice-From Zero to One
 date: 2026-04-28 10:10:10 +0800
 categories: [Projects]
 tags: [Simplefoc, Arduino, Altium, STM32F103CBT6, Motor]
