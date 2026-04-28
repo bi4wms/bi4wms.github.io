@@ -8,7 +8,6 @@ toc: true
 comments: true
 ---
 
-
 **SimpleFOC Integrated Board Hardware Practice: From Zero to One (2) – From Schematic to PCB Layout, Teaching You How to Design an FOC Control Board That Can Be Directly Mounted on the Motor**
 
 This article explains the complete process of creating this SimpleFOC circuit board from scratch, along with all the detailed considerations in the hardware design.
