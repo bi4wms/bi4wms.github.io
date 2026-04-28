@@ -2,7 +2,7 @@
 title: SimpleFOC Integrated Board Hardware in Practice-From Zero to One - part2
 date: 2026-04-28 10:10:10 +0800
 categories: [Projects]
-tags: [Simplefoc, Arduino, Altium, STM32F103CBT6, Blushless motor]
+tags: [Simplefoc, Arduino, Altium, STM32F103CBT6, Motor]Motor
 layout: post
 toc: true
 comments: true
