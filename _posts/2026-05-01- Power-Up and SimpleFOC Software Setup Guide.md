@@ -1,6 +1,6 @@
 ---
 title: SimpleFOC Integrated Board from Zero to One - Part 3
-date: 2026-05-01 16:10:10 +0800
+date: 2026-05-01 6:10:10 +0800
 categories: [Projects, Simplefoc]
 tags: [Simplefoc, Arduino, Altium, STM32F103CBT6, Motor]
 layout: post
