@@ -1,6 +1,6 @@
 ---
 title: SimpleFOC Integrated Board from Zero to One - Part 1
-date: 2026-04-25 10:10:10 +0800
+date: 2026-04-05 10:10:10 +0800
 categories: [Projects, Simplefoc]
 tags: [Simplefoc, Arduino, Altium, STM32F103CBT6, Blushless motor]
 layout: post
