@@ -1,6 +1,6 @@
 ---
 title: How to Build a DIY STM32 Oscilloscope (Step-by-Step Guide)
-date: 2026-03-26 10:10:10 +0800
+date: 2026-01-20 10:10:10 +0800
 categories: [Projects, Oscilloscope]
 tags: [Oscilloscope, Logic Analyzer, Altium, STM32F103CBT6, 3D-printed]
 layout: post
