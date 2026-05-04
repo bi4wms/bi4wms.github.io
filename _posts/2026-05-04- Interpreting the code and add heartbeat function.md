@@ -16,6 +16,23 @@ image: /assets/img/simplefoc-part4.png
 This article mainly explains the code.  
 The example is based on the official **SimpleFOC** example: `full_control_serial.ino`.
 
+
+```cpp
+// LED Blink Example
+int ledPin = 13;
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(ledPin, HIGH);  // turn the LED on
+  delay(1000);                  // wait for a second
+  digitalWrite(ledPin, LOW);   // turn the LED off
+  delay(1000);                  // wait for a second
+}
+
+
 ```cpp
 /**
    Comprehensive BLDC motor control example using magnetic sensor
@@ -195,6 +212,7 @@ const long period = 1000;         // period at which to blink in ms
 void LEDblink();
 
 ** Heartbeat function:**
+
 ```cpp
 void LEDblink()
 {
@@ -211,6 +229,7 @@ void LEDblink()
 }
 
 ** Add heartbeat function to loop():**
+
 ```cpp
 
 void loop() {
