@@ -17,9 +17,22 @@ This article mainly explains the code.
 The example is based on the official **SimpleFOC** example: `full_control_serial.ino`.
 
 
-```ino
+```cpp
+/**
+   Comprehensive BLDC motor control example using magnetic sensor
+
+   Using serial terminal user can send motor commands and configure the motor and FOC in real-time:
+   - configure PID controller constants
+   - change motion control loops
+   - monitor motor variabels
+   - set target values
+   - check all the configuration values
+
+   See more info in docs.simplefoc.com/commander_interface
+*/
 #include <SimpleFOC.h>
 //#define USE_HSI
+
 // magnetic sensor instance - SPI
 //MagneticSensorSPI sensor = MagneticSensorSPI(AS5147_SPI, 10);
 // magnetic sensor instance - MagneticSensorI2C
@@ -27,9 +40,11 @@ MagneticSensorI2C sensor = MagneticSensorI2C(AS5600_I2C);
 //MagneticSensorI2C sensor = MagneticSensorI2C(0x36, 12, 0X0C, 4);
 // magnetic senso    r instance - analog output
 // MagneticSensorAnalog sensor = MagneticSensorAnalog(A1, 14, 1020);
+
+
 // BLDC motor & driver instance
 //BLDCMotor motor = BLDCMotor(11);
-BLDCMotor motor = BLDCMotor(7);   // your brushless motor
+BLDCMotor motor = BLDCMotor(7);   //根据实际使用无刷电机设置
 //BLDCDriver3PWM driver = BLDCDriver3PWM(9, 5, 6, 8);
 BLDCDriver3PWM driver = BLDCDriver3PWM(PB0, PB1, PB4, PA6);
 // Stepper motor & driver instance
@@ -42,14 +57,21 @@ unsigned long previousMillis = 0;  //will store last time LED was blinked
 const long period = 400;         // period at which to blink in ms
 #define ledPin PB3
 
+
 // commander interface
 Commander command = Commander(Serial);
 void onMotor(char* cmd) {
   command.motor(&motor, cmd);
 }
 
+
+
+
+
 void setup() {
+
   pinMode(PB3, OUTPUT);
+
   // initialise magnetic sensor hardware
   sensor.init();
   // link the motor to the sensor
@@ -75,11 +97,11 @@ void setup() {
   motor.controller = MotionControlType::torque;
   
   // contoller configuration based on the control type
-
-//  motor.PID_velocity.P = 0.2f;
-//  motor.PID_velocity.I = 20;
-//  motor.PID_velocity.D = 0;
-
+/*
+  motor.PID_velocity.P = 0.2f;
+  motor.PID_velocity.I = 20;
+  motor.PID_velocity.D = 0;
+*/
 //bi4wms comment above add bellow
     motor.PID_velocity.P = 0.1f;
   motor.PID_velocity.I = 10;
@@ -91,12 +113,12 @@ void setup() {
 
   // velocity low pass filtering time constant
   motor.LPF_velocity.Tf = 0.01f;
-
+/*
   // angle loop controller
-//  motor.P_angle.P = 20;
+  motor.P_angle.P = 20;
   // angle loop velocity limit
-//  motor.velocity_limit = 50;
-
+  motor.velocity_limit = 50;
+*/
 //bi4wms comment above add bellow
   // angle loop controller
   motor.P_angle.P = 10;
@@ -125,6 +147,7 @@ void setup() {
   Serial.println(F("====bi4wms SETUP SUCESS====."));
 }
 
+
 void loop() {
   // iterative setting FOC phase voltage
   motor.loopFOC();
@@ -140,6 +163,8 @@ void loop() {
     LEDblink();
 }
 
+
+
 void LEDblink()
 {
   unsigned long currentMillis = millis(); // store the current time
@@ -153,6 +178,7 @@ void LEDblink()
     digitalWrite(ledPin, ledState);//set LED with ledState to blink again
   }
 }
+
 
 ### Main Modifications
 
