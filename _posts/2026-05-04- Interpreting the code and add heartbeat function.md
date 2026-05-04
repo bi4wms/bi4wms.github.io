@@ -17,33 +17,7 @@ This article mainly explains the code.
 The example is based on the official **SimpleFOC** example: `full_control_serial.ino`.
 
 
-```cpp
-// LED Blink Example
-int ledPin = 13;
-
-void setup() {
-  pinMode(ledPin, OUTPUT);
-}
-
-void loop() {
-  digitalWrite(ledPin, HIGH);  // turn the LED on
-  delay(1000);                  // wait for a second
-  digitalWrite(ledPin, LOW);   // turn the LED off
-  delay(1000);                  // wait for a second
-}
-
-
-```cpp
-/**
-   Comprehensive BLDC motor control example using magnetic sensor
-   Using serial terminal user can send motor commands and configure the motor and FOC in real-time:
-   - configure PID controller constants
-   - change motion control loops
-   - monitor motor variabels
-   - set target values
-   - check all the configuration values
-   See more info in docs.simplefoc.com/commander_interface
-*/
+```ino
 #include <SimpleFOC.h>
 //#define USE_HSI
 // magnetic sensor instance - SPI
@@ -101,11 +75,11 @@ void setup() {
   motor.controller = MotionControlType::torque;
   
   // contoller configuration based on the control type
-/*
-  motor.PID_velocity.P = 0.2f;
-  motor.PID_velocity.I = 20;
-  motor.PID_velocity.D = 0;
-*/
+
+//  motor.PID_velocity.P = 0.2f;
+//  motor.PID_velocity.I = 20;
+//  motor.PID_velocity.D = 0;
+
 //bi4wms comment above add bellow
     motor.PID_velocity.P = 0.1f;
   motor.PID_velocity.I = 10;
@@ -117,12 +91,12 @@ void setup() {
 
   // velocity low pass filtering time constant
   motor.LPF_velocity.Tf = 0.01f;
-/*
+
   // angle loop controller
-  motor.P_angle.P = 20;
+//  motor.P_angle.P = 20;
   // angle loop velocity limit
-  motor.velocity_limit = 50;
-*/
+//  motor.velocity_limit = 50;
+
 //bi4wms comment above add bellow
   // angle loop controller
   motor.P_angle.P = 10;
