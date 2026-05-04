@@ -16,21 +16,9 @@ image: /assets/img/simplefoc-part4.png
 This article mainly explains the code.  
 The example is based on the official **SimpleFOC** example: `full_control_serial.ino`.
 
-
-```cpp
-/**
-   Comprehensive BLDC motor control example using magnetic sensor
-   Using serial terminal user can send motor commands and configure the motor and FOC in real-time:
-   - configure PID controller constants
-   - change motion control loops
-   - monitor motor variabels
-   - set target values
-   - check all the configuration values
-   See more info in docs.simplefoc.com/commander_interface
-*/
+···cpp
 #include <SimpleFOC.h>
 //#define USE_HSI
-
 // magnetic sensor instance - SPI
 //MagneticSensorSPI sensor = MagneticSensorSPI(AS5147_SPI, 10);
 // magnetic sensor instance - MagneticSensorI2C
@@ -39,10 +27,9 @@ MagneticSensorI2C sensor = MagneticSensorI2C(AS5600_I2C);
 // magnetic senso    r instance - analog output
 // MagneticSensorAnalog sensor = MagneticSensorAnalog(A1, 14, 1020);
 
-
 // BLDC motor & driver instance
 //BLDCMotor motor = BLDCMotor(11);
-BLDCMotor motor = BLDCMotor(7);   //根据实际使用无刷电机设置
+BLDCMotor motor = BLDCMotor(7);   //your brushless motor
 //BLDCDriver3PWM driver = BLDCDriver3PWM(9, 5, 6, 8);
 BLDCDriver3PWM driver = BLDCDriver3PWM(PB0, PB1, PB4, PA6);
 // Stepper motor & driver instance
@@ -55,15 +42,11 @@ unsigned long previousMillis = 0;  //will store last time LED was blinked
 const long period = 400;         // period at which to blink in ms
 #define ledPin PB3
 
-
 // commander interface
 Commander command = Commander(Serial);
 void onMotor(char* cmd) {
   command.motor(&motor, cmd);
 }
-
-
-
 
 
 void setup() {
