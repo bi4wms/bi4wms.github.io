@@ -16,7 +16,7 @@ image: /assets/img/simplefoc-part4.png
 This article mainly explains the code.  
 The example is based on the official **SimpleFOC** example: `full_control_serial.ino`.
 
-···cpp
+```cpp
 #include <SimpleFOC.h>
 //#define USE_HSI
 // magnetic sensor instance - SPI
@@ -159,7 +159,7 @@ void LEDblink()
     digitalWrite(ledPin, ledState);//set LED with ledState to blink again
   }
 }
-
+```
 
 ### Main Modifications
 
@@ -191,7 +191,7 @@ unsigned long previousMillis = 0;  //will store last time LED was blinked
 const long period = 1000;         // period at which to blink in ms
 #define ledPin PB3
 void LEDblink();
-
+```
 ** Heartbeat function:**
 
 ```cpp
@@ -208,6 +208,7 @@ void LEDblink()
     digitalWrite(ledPin, ledState);//set LED with ledState to blink again
   }
 }
+```
 
 ** Add heartbeat function to loop():**
 
@@ -227,3 +228,4 @@ void loop() {
 
   LEDblink();
 }
+```
