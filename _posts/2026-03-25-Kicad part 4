@@ -1,0 +1,92 @@
+---
+title: "KiCad Tutorial 2026: Useful Tools in PCB Design"
+date: 2026-03-25 10:40:10 +0800
+categories: [Tutorial, KiCad]
+tags: [KiCad, Pcb-design, Schematic, Gerber]
+layout: post
+toc: true
+comments: true
+image: /assets/img/kicad.png
+---
+
+# KiCad Circuit Design Software Usage Guide
+
+## Part 4: Useful Tools in PCB Design
+
+### 4.1 Add Dimension Annotations  
+![](/assets/img/postimg/tutorial/howtousekicad/4.1.png){: w="700" h="400" }
+
+### 4.2 Align Components  
+![](/assets/img/postimg/tutorial/howtousekicad/4.2.png){: w="700" h="400" }
+
+
+### 4.3 Chamfer Board Outline
+![](/assets/img/postimg/tutorial/howtousekicad/4.3.png){: w="700" h="400" }
+
+![](/assets/img/postimg/tutorial/howtousekicad/4.3-2.png){: w="700" h="400" }
+
+
+
+### 4.4 Show/Hide Net Connections  
+![](/assets/img/postimg/tutorial/howtousekicad/4.4.png){: w="700" h="400" }
+
+
+### 4.5 Hide Reference Designators in 3D View  
+![](/assets/img/postimg/tutorial/howtousekicad/4.5.png){: w="700" h="400" }
+
+
+### 4.6 Define Routing Rules
+![](/assets/img/postimg/tutorial/howtousekicad/4.6.png){: w="700" h="400" }
+
+![](/assets/img/postimg/tutorial/howtousekicad/4.6-2.png){: w="700" h="400" }
+
+
+
+### 4.7 Set 50 Ohm Impedance Traces  
+![](/assets/img/postimg/tutorial/howtousekicad/4.7.png){: w="700" h="400" }
+
+
+### 4.8 Adjust Trace Width During Routing,Shortcut key: "E"
+
+![](/assets/img/postimg/tutorial/howtousekicad/4.8.png){: w="700" h="400" }
+
+
+
+### 4.9 Hide Specific Net Ratsnest Lines  
+
+![](/assets/img/postimg/tutorial/howtousekicad/4.9.png){: w="700" h="400" }
+
+
+### 4.10 Highlight Nets  
+
+![](/assets/img/postimg/tutorial/howtousekicad/4.10.png){: w="700" h="400" }
+
+### 4.11 Hide Silkscreen Reference Designators 
+
+![](/assets/img/postimg/tutorial/howtousekicad/4.11.png){: w="700" h="400" }
+
+
+### 4.12 Length Matching Routing,Use the length tuning tool.
+
+![](/assets/img/postimg/tutorial/howtousekicad/4.12.png){: w="700" h="400" }
+
+
+### 4.13 Batch Modify Via Sizes  
+- Select the region
+
+![](/assets/img/postimg/tutorial/howtousekicad/4.13.png){: w="700" h="400" }
+
+- Modify via parameters
+
+![](/assets/img/postimg/tutorial/howtousekicad/4.13-2.png){: w="700" h="400" }
+
+![](/assets/img/postimg/tutorial/howtousekicad/4.13-2.png){: w="700" h="400" }
+
+
+
+### 4.14 Set Copper Pour Nets  
+
+![](/assets/img/postimg/tutorial/howtousekicad/4.14.png){: w="700" h="400" }
+
+
+---
