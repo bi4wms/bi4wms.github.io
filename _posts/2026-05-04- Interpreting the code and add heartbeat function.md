@@ -20,14 +20,12 @@ The example is based on the official **SimpleFOC** example: `full_control_serial
 ```cpp
 /**
    Comprehensive BLDC motor control example using magnetic sensor
-
    Using serial terminal user can send motor commands and configure the motor and FOC in real-time:
    - configure PID controller constants
    - change motion control loops
    - monitor motor variabels
    - set target values
    - check all the configuration values
-
    See more info in docs.simplefoc.com/commander_interface
 */
 #include <SimpleFOC.h>
