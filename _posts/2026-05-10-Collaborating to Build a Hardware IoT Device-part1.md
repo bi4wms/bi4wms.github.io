@@ -32,16 +32,24 @@ After evaluation, the **LoRa system solution** is the most suitable choice.
 - **Water Detection**: Adopt the proven resistance-based detection method, with special attention to electrode anti-corrosion design.
 
 I have become proficient with KiCad recently. After selecting a suitable off-the-shelf enclosure, I completed the PCB layout design to fit inside the shell.
+<img width="864" height="598" alt="image" src="https://github.com/user-attachments/assets/22104844-4a88-4dfb-a1c1-d4c084b22d4c" />
+
 
 **3D PCBA Appearance**
 
-*(Insert 3D PCBA rendering image here)*
+<img width="864" height="533" alt="image" src="https://github.com/user-attachments/assets/c23b50c9-2547-41a9-93eb-cfb0a381cdaf" />
+
 
 I then fed the 3D PCBA images, enclosure photos, and key product information into an AI tool to generate a promotional color flyer for the node device.
+
+<img width="864" height="577" alt="image" src="https://github.com/user-attachments/assets/fb5f49f0-4823-4daa-a1d1-7cbe2426670d" />
+
 
 **System Platform Architecture**
 
 The platform adopts a **LoRa Gateway + PC Platform** solution. The LoRa gateway communicates with the PC system via wired or wireless networks. I also used AI to generate the overall system design block diagram.
+
+<img width="865" height="475" alt="image" src="https://github.com/user-attachments/assets/374e7bd4-8abd-4917-b71a-9fe77a28c630" />
 
 ---
 
