@@ -1,5 +1,5 @@
 ---
-title: Collaborating to Build a Hardware IoT Device – Part 1 Water Immersion Sensor System Solution
+title: Collaborating to Build a Hardware IoT Device - Part 1 Water Immersion Sensor System Solution
 date: 2026-05-10 06:10:10 +0800
 categories: [Projects, Lora]
 tags: [Lora, Arduino, KiCad, STM32G030, iot]
