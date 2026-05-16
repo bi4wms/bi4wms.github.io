@@ -44,11 +44,16 @@ In this guide, we share the full hardware design using the simplest electrode re
 
 This minimal system keeps the design compact and low-cost while maintaining flexibility.
 
+<img width="865" height="629" alt="image" src="https://github.com/user-attachments/assets/f2a94e45-2176-47e7-b2b5-6ee8f2dc63e1" />
+
+
 ---
 
 ## LoRa RF Module Circuit
 
 We chose the **SX1278** over LLCC68 for superior Arduino library support and easier development.
+<img width="865" height="370" alt="image" src="https://github.com/user-attachments/assets/c7dd21da-c110-4ad0-9f75-29ef482d3a7a" />
+
 
 **Main Features**:
 - Standard SPI interface to MCU
@@ -61,6 +66,8 @@ We chose the **SX1278** over LLCC68 for superior Arduino library support and eas
 ## Water Immersion Detection Circuit (Electrode Resistance Method)
 
 **Principle**: When water bridges the electrodes, it creates a conductive path that triggers the detection signal.
+<img width="865" height="629" alt="image" src="https://github.com/user-attachments/assets/1d6991c1-60fc-4172-aa31-05820c4838b6" />
+
 
 ### Circuit Design
 - Uses a **PNP + NPN** transistor combination for efficient switching and low standby current.
@@ -70,11 +77,15 @@ We chose the **SX1278** over LLCC68 for superior Arduino library support and eas
 
 This design is extremely simple, reliable, and consumes almost no power when dry.
 
+
 ---
 
 ## Reserved Capacitive Water Detection Circuit (Future Upgrade)
 
 For environments where electrode corrosion or false positives from minerals might be an issue, we pre-reserved a **capacitive sensing** path.
+
+<img width="865" height="398" alt="image" src="https://github.com/user-attachments/assets/f59623e4-063e-45d9-ba68-acddd7b6c607" />
+
 
 **Principle**: Water’s dielectric constant (~80× higher than air) significantly changes the capacitance between two electrodes.
 
@@ -92,6 +103,9 @@ This section remains unpopulated by default but gives the hardware future-proofi
 
 **Battery**: CR2450 3V coin cell.  
 **Challenge**: LoRa transmission can cause high current peaks that may trigger brown-out resets.
+
+<img width="865" height="351" alt="image" src="https://github.com/user-attachments/assets/ee5b42b9-5bad-40fe-95a9-f726c515fffa" />
+
 
 **Solution**:
 - Three **100µF** electrolytic capacitors in parallel as energy storage.
