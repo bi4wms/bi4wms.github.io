@@ -1,5 +1,5 @@
 ---
-title: Collaborating to Build a Hardware IoT Device - Part 1 Water Immersion Sensor System Solution
+title: LoRa Flood Sensor Development Series - Part 1 Water Immersion Sensor System Solution
 date: 2026-05-10 06:10:10 +0800
 categories: [Projects, Lora]
 tags: [Lora, Arduino, KiCad, STM32G030, iot]
@@ -9,7 +9,7 @@ comments: true
 image: /assets/img/lora-part1.png
 ---
 
-# Collaborating to Build a Hardware IoT Device – Water Immersion Sensor System Solution
+# LoRa Flood Sensor Development Series – Water Immersion Sensor System Solution
 
 Recently, I evaluated a water immersion sensor system solution. Here is a quick summary of the proposed design.
 
