@@ -15,9 +15,17 @@ image: /assets/img/lora-part3.png
 
 We are using an **existing enclosure** for a **shell-fit PCBA design**.
 
+<img width="865" height="865" alt="image" src="https://github.com/user-attachments/assets/7fd44c42-342c-415a-82e0-c59b88a45fc5" />
+
+<img width="865" height="865" alt="image" src="https://github.com/user-attachments/assets/2792f5b1-dbf3-45db-8062-b95e570eb1d1" />
+
+
+
 - **Enclosure outer diameter**: 50mm  
 - Due to **waterproof design**, the internal space is quite limited.  
 - The other side must accommodate a **coin cell battery**, therefore **only single-sided component placement** is allowed.
+
+
 
 ---
 
